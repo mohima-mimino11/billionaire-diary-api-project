@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billionaire Diary</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-slate-800 p-8">
+        <nav class="mt-6 flex items-center content-center place-content-around">
+           <img  src="images/logo/logo.png"  class="navabar-center" alt="" srcset="">
+           <img style="height: 60px;" src="images/logo/logo1.png"  class="text-xs" alt="" srcset="">
+        </nav>
+    </header>
+    <main class=" bg-gray-300">
+      <section>
+        <div class="mt-0 w-50 flex items-center justify-center gap-x-3">
+           
+          <input type="text" id="search-field" placeholder="Search By Industry" class="mt-3 input input-bordered input-error w-full max-w-xs" />
+            <div id="btn-search" class="mt-2 btn btn-primary">Search</div>
+          </div>
+    </section>
+
+      <!-- btn group section  -->
+      <section >
+        <div class="mt-4 btn-group btn-group-horizontal">
+          <h1 class="text-black font-semibold text-3xl text-center mb-4">Billionaire <br> Diary</h1>
+          <button class="bg-info-content p-5 text-white mx-4 rounded-lg  mb-2">Add a user</button>
+          <button class="bg-info-content p-5 text-white mx-4 rounded-lg  mb-2">Double Money</button>
+          <button class="bg-info-content p-5 text-white mx-4 rounded-lg  mb-2">Sort By Rank</button>
+          <button class="bg-info-content p-5 text-white mx-4 rounded-lg  mb-2">Calculate Entire Wealth</button>
+          <button class="bg-info-content p-5 text-white mx-4 rounded-lg  mb-2" id="btn-show-all">Show All Billionaries</button>
+          <button class="bg-info-content p-5 text-white mx-4 rounded-lg  mb-2">Richest By Industry</button>
+          <button class="bg-info-content p-5 text-white mx-4 rounded-lg  mb-2">Richest By States</button>
+      </div>
+      <!-- loader -->
+      <div id="loader" class="flex items-center justify-center mt-6 invisible">
+        <progress class="progress w-56 "></progress>
+      </div>
+     
+
+      </section>
+            <!-- display all person section  -->
+    <section class="show-section">
+                    <div id="billionaire-container" class="container grid gap-y-5 gap-x-5 mt-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                     
+                    </div>
+                
+                
+                
+                    
+                  </section>
+
+            
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
